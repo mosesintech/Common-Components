@@ -2,15 +2,15 @@
 
 This repo is a collection of components commonly reused in other projects. This will also act as a single source of truth for latest UI and design trends.
 
-## The Components
-
-Tailwind is my prefered styling method, but sometimes I'll need to work on projects using regular CSS. Because of this, each component is created twice: once with Tailwind styles and once with pure CSS.
-
-### Demo
+## Demo
 
 To see the demo on your own machine, simply run `npm run dev`.
 
 You should see a toggle button that will switch between Tailwind components and pure CSS components. Ideally, they should look identical.
+
+## The Components
+
+Tailwind is my prefered styling method, but sometimes I'll need to work on projects using regular CSS. Because of this, each component is created twice: once with Tailwind styles and once with pure CSS.
 
 ### Card & GlassCard
 

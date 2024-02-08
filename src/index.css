@@ -1,31 +1,16 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  /* needed to prevent weird margin stuff */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  margin: 0;
   display: flex;
-  min-width: 320px;
+  justify-content: center;
+  background-color: #081945;
+  color: silver;
   min-height: 100vh;
 }
 
@@ -65,3 +50,74 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.container {
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  background-color: #081945;
+}
+
+/* Card Component Styles */
+.container .cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.container .glass-card {
+  width: 300px;
+  height: 400px;
+  /* Applying Glassmorphic Design */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.container .glass-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(25px);
+  transition: .7s;
+}
+
+.container .glass-card .content h2 {
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+.container .glass-card .content p {
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.container .glass-card .content span a {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Component Styles End */
